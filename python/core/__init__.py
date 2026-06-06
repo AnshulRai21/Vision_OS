@@ -1,1 +1,1 @@
-"""VisionOS package placeholder."""
+"""Core Python processing package for Vision_OS."""

@@ -4,25 +4,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.visionos</groupId>
-    <artifactId>visionos-dashboard</artifactId>
+    <artifactId>vision-os-dashboard</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javafx.version>21.0.4</javafx.version>
+        <javafx.version>21.0.5</javafx.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
         </dependency>
     </dependencies>
@@ -39,7 +33,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.visionos.dashboard.VisionOSDashboardApp</mainClass>
+                    <mainClass>com.visionos.dashboard.DashboardApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>

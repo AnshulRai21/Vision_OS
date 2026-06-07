@@ -48,16 +48,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def run_engine(config: EngineConfig) -> int:
     """Start the webcam loop and run Phase 1 face detection."""
 
-    try:
-        import cv2
-        import mediapipe as mp
-    except ImportError as exc:
-        print(
-            "Missing Python dependency. Install dependencies with `pip install -r requirements.txt`.",
-            file=sys.stderr,
-        )
-        print(f"Import error: {exc}", file=sys.stderr)
-        return 1
+    import cv2
+    import mediapipe as mp
 
     cap = cv2.VideoCapture(config.camera_index)
     if not cap.isOpened():
